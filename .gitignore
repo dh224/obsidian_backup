@@ -1,0 +1,41 @@
+# --- 操作系统生成的文件 (OS generated files) ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# --- Obsidian 内部核心忽略项 (Core Obsidian Ignores) ---
+
+# 1. 忽略工作区状态 (最重要)
+# 这些文件记录了你当前打开的标签页和面板布局。
+# 如果不忽略，每次你在不同设备打开/关闭 Obsidian，都会产生 Git 冲突。
+.obsidian/workspace
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# 2. 忽略缓存和日志
+.obsidian/cache/
+.obsidian/backups/
+*.log
+
+# 3. 忽略 Obsidian 的废纸篓
+.trash/
+
+# --- 插件相关 (Plugin specific) ---
+
+# 通常我们希望同步插件(.obsidian/plugins/)，但有些插件会生成大量不必要的缓存。
+
+# 如果你使用 obsidian-git 插件，忽略它的状态文件
+.obsidian/plugins/obsidian-git/data.json
+
+# 如果你不想同步最近打开的文件列表
+.obsidian/daily-notes.json
+.obsidian/recent-files.json
+
+# --- 其他 (Optional) ---
+# 如果你有一些私人的临时草稿不想同步，可以放在一个特定文件夹（例如 Private）并在此忽略
+# Private/
